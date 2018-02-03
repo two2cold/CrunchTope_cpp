@@ -1,6 +1,9 @@
 /* Read one line from a file
 Coded by Yuchen Liu */
 
+#ifndef READ_BLOCK_H__
+#define READ_BLOCK_H__
+
 int ReadBlock(string blockName, string* lines)
 {
 	ifstream file;
@@ -27,3 +30,5 @@ int ReadBlock(string blockName, string* lines)
 	file.close();
 	return i;
 }
+
+#endif

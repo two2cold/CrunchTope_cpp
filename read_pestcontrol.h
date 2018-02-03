@@ -1,6 +1,9 @@
 /* Read PestControl file
 Coded by Yuchen Liu */
 
+#ifndef READ_PESTCONTROL_H__
+#define READ_PESTCONTROL_H__
+
 string inputFileName;
 
 void ReadPestControl()
@@ -23,3 +26,5 @@ void ReadPestControl()
 	}
 	file.close();
 }
+
+#endif

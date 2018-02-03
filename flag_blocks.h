@@ -1,6 +1,9 @@
 /* Read the entire input file and store the blocks specified in the input file
 Coded by Yuchen Liu */
 
+#ifndef FLAG_BLOCKS_H__
+#define FLAG_BLOCKS_H__
+
 bool flagBlocks[BLOCK_NUMS];
 string blockNames[BLOCK_NUMS] = {
 "TITLE", "RUNTIME", "OUTPUT", "DISCRETIZATION", "PRIMARY_SPECIES"
@@ -24,3 +27,5 @@ void FlagBlocks()
 	}
 	file.close();
 }
+
+#endif

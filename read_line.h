@@ -1,6 +1,9 @@
 /* Read each word in a line
 Coded by Yuchen Liu*/
 
+#ifndef READ_LINE_H__
+#define READ_LINE_H__
+
 int ReadLine(string stringLine, string* words)
 {
 	istringstream iss(stringLine);
@@ -16,3 +19,5 @@ int ReadLine(string stringLine, string* words)
 	}
 	return i; // Return the number of words in the string
 }
+
+#endif
