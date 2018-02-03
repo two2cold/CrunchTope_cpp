@@ -7,9 +7,9 @@ Coded by Yuchen Liu */
 using namespace std;
 #include "_stricmp.h"
 #include "external_variables.h"
-#include "read_pestcontrol.h"
-#include "flag_blocks.h"
-#include "read_block.h"
-#include "read_line.h"
+#include "ReadPestcontrol.h"
+#include "FlagBlocks.h"
+#include "ReadBlock.h"
+#include "ReadLine.h"
 
 #endif

@@ -10,11 +10,11 @@ OBJFS = crunchtope.o\
 
 HEADERS = _stricmp.h\
           crunch_header.h\
-          flag_blocks.h\
+          FlagBlocks.h\
           external_variables.h\
-          read_block.h\
-          read_line.h\
-          read_pestcontrol.h
+          ReadBlock.h\
+          ReadLine.h\
+          ReadPestcontrol.h
 
 CrunchTope: $(OBJFS)
 	$(CC) $(CFLAGS) -o CrunchTope $(OBJFS)
