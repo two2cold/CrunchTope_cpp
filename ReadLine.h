@@ -15,6 +15,9 @@ int ReadLine(string stringLine, string* words)
 		{
 			*(words + i) = tempWord;
 			i++;
+		}else
+		{
+			break;
 		}
 	}
 	return i; // Return the number of words in the string

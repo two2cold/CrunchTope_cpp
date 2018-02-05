@@ -7,26 +7,14 @@ Coded by Yuchen Liu */
 #include <string>
 #include <sstream>
 #include <algorithm>
+#include <stdlib.h>
 #include "crunch_header.h"
 
 int main()
 {
-	ReadPestControl();
-	cout << inputFileName << endl;
-	string runtime[BLOCK_LINE_NUMS];
-	int lineNum = ReadBlock("RUNTIME", runtime);
-	for(int i=0; i<lineNum; i++)
-		cout << runtime[i] << endl;
-	string words[LINE_WORD_NUMS];
-	int wordCount = ReadLine(runtime[0], words);
-	for(int i=0; i<wordCount; i++)
-		cout << words[i] << endl;
-	for(int i=0;i<20;i++)
-		cout << flagBlocks[i];
-	cout << endl;
-	FlagBlocks();
-	for(int i=0;i<20;i++)
-		cout << flagBlocks[i];
-	cout << endl;
-	return 0;
+	StartTope();
+	cout << Coordinate << endl;
+	cout << Later_inputfiles[0] << Later_inputfiles[1] << Later_inputfiles[2] << endl;
+	cout << Later_inputfiles[2].empty() << endl;
+	cout << 1.0e-7 << endl;
 }

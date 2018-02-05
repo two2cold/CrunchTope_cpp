@@ -14,7 +14,11 @@ HEADERS = _stricmp.h\
           external_variables.h\
           ReadBlock.h\
           ReadLine.h\
-          ReadPestcontrol.h
+          ReadPestcontrol.h\
+          ReadTitle.h\
+          ReadRuntime.h\
+          ReadKeyword.h\
+          StartTope.h
 
 CrunchTope: $(OBJFS)
 	$(CC) $(CFLAGS) -o CrunchTope $(OBJFS)

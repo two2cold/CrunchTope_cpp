@@ -11,5 +11,9 @@ using namespace std;
 #include "FlagBlocks.h"
 #include "ReadBlock.h"
 #include "ReadLine.h"
+#include "ReadKeyword.h"
+#include "ReadTitle.h"
+#include "ReadRuntime.h"
+#include "StartTope.h"
 
 #endif
