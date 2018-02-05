@@ -14,7 +14,7 @@ HEADERS = _stricmp.h\
           external_variables.h\
           ReadBlock.h\
           ReadLine.h\
-          ReadPestcontrol.h\
+          ReadPestControl.h\
           ReadTitle.h\
           ReadRuntime.h\
           ReadKeyword.h\
