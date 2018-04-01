@@ -18,6 +18,16 @@ void StartTope()
 	if(flagBlocks[1])
 	{
 		ReadRuntime();
+	}else
+	{
+		cout << "Cannot find RUNTIME block" << endl;
+	}
+	if(flagBlocks[2])
+	{
+		ReadOutput();
+	}else
+	{
+		cout << "Cannot find OUTPUT block" << endl;
 	}
 }
 

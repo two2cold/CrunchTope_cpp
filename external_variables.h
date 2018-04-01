@@ -67,5 +67,8 @@ double rangeTimestep_init[2] = {0, 500};
 double Time_tolerance = 0.001;
 double rangeTime_tolerance[2] = {0, 500};
 bool petscon = true;
+double Spatial_profile[LINE_WORD_NUMS];
+string Time_units = "hours";
+string optionsTime_units[3] = {"hours", "years", "days"};
 
 #endif

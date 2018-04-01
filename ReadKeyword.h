@@ -9,6 +9,7 @@ class ReadKeyword
 public:
 	ReadKeyword(string words[], string name, double* num, double range[2]);
 	ReadKeyword(string words[], string name, double* num);
+	ReadKeyword(string words[], string name, double* num, int numWords);
 	ReadKeyword(string words[], string name, bool* TF);
 	ReadKeyword(string words[], string name, string* var, string options[], int optionsLen);
 	ReadKeyword(string words[], string name, string* var, int numWords);
@@ -52,6 +53,18 @@ ReadKeyword::ReadKeyword(string words[], string name, double* num)
 	if(!_stricmp(words[0], name))
 	{
 		*num = atof(words[1].c_str());
+		isRead = true;
+	}
+}
+ReadKeyword::ReadKeyword(string words[], string name, double* num, int numWords)
+{
+	isRead = false;
+	if(!_stricmp(words[0], name))
+	{
+		for(int i=1;i<numWords;i++)
+		{
+			*(num+i-1) = atof(words[i].c_str());
+		}
 		isRead = true;
 	}
 }

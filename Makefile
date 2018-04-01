@@ -18,6 +18,7 @@ HEADERS = _stricmp.h\
           ReadTitle.h\
           ReadRuntime.h\
           ReadKeyword.h\
+          ReadOutput.h\
           StartTope.h
 
 CrunchTope: $(OBJFS)
