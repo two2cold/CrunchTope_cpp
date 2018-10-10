@@ -2,24 +2,15 @@
 # Coded by Yuchen Liu
 #
 CC = g++
-CFLAGS  = -g -Wall
+CFLAGS  = -g -Wall -std=c++11
 
 default: CrunchTope
 
 OBJFS = crunchtope.o\
 
 HEADERS = _stricmp.h\
-          crunch_header.h\
-          FlagBlocks.h\
-          external_variables.h\
-          ReadBlock.h\
-          ReadLine.h\
-          ReadPestControl.h\
-          ReadTitle.h\
-          ReadRuntime.h\
-          ReadKeyword.h\
-          ReadOutput.h\
-          StartTope.h
+	ReadPestControl.h\
+	StartTope.h
 
 CrunchTope: $(OBJFS)
 	$(CC) $(CFLAGS) -o CrunchTope $(OBJFS)
